@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Songwriting Toolkit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<header>
+<p class="eyebrow">Creative songwriting workspace</p>
+<h1>Songwriting Toolkit</h1>
+<p class="sub">Develop your idea from a theme into verses, choruses, bridges, rhyme notes, and a finished draft.</p>
+</header>
+
+<section class="card grid">
+<label>Song Title<input id="songTitle" placeholder="Untitled song"></label>
+<label>Theme / Emotion<input id="theme" placeholder="Hope, heartbreak, freedom..."></label>
+<label>Key / Chords<input id="chords" placeholder="C - G - Am - F"></label>
+<label>Tempo / Feel<input id="tempo" placeholder="78 BPM, soulful"></label>
+</section>
+
+<section class="card">
+<div class="section-head"><h2>Hook Lab</h2><button id="hookPromptBtn">Give me a prompt</button></div>
+<p id="hookPrompt" class="prompt">Write one line that says what the whole song is really about.</p>
+<textarea id="hook" rows="3" placeholder="Write your main hook or title line..."></textarea>
+</section>
+
+<section class="song-grid">
+<article class="card"><h2>Verse 1</h2><textarea id="verse1" rows="9" placeholder="Introduce the story, place, or emotion..."></textarea></article>
+<article class="card"><h2>Pre-Chorus</h2><textarea id="prechorus" rows="9" placeholder="Build tension and lead into the chorus..."></textarea></article>
+<article class="card"><h2>Chorus</h2><textarea id="chorus" rows="9" placeholder="Deliver the hook and emotional center..."></textarea></article>
+<article class="card"><h2>Verse 2</h2><textarea id="verse2" rows="9" placeholder="Move the story forward..."></textarea></article>
+<article class="card"><h2>Bridge</h2><textarea id="bridge" rows="9" placeholder="Change perspective or reveal a truth..."></textarea></article>
+<article class="card"><h2>Final Chorus / Outro</h2><textarea id="outro" rows="9" placeholder="Bring the song home..."></textarea></article>
+</section>
+
+<section class="card grid">
+<label>Rhyme Scheme<input id="rhymeScheme" placeholder="ABAB, AABB, free verse..."></label>
+<label>Vocal Notes<input id="vocalNotes" placeholder="Soft verse, stronger chorus, varied cadence..."></label>
+<label class="full">Imagery / Word Bank<textarea id="wordBank" rows="5" placeholder="Colors, places, objects, sensory details, rhyme ideas..."></textarea></label>
+<label class="full">Production / Arrangement Notes<textarea id="productionNotes" rows="5" placeholder="Piano intro, drums enter in chorus, harmony on final hook..."></textarea></label>
+</section>
+
+<section class="card inspiration">
+<div><h2>Creative Prompt</h2><p id="creativePrompt">Write the scene before you write the song.</p></div>
+<button id="newPromptBtn">New prompt</button>
+</section>
+
+<section class="actions">
+<button id="saveBtn" class="primary">Save Draft</button>
+<button id="exportBtn">Export Lyrics</button>
+<button id="clearBtn">Clear</button>
+<span id="status"></span>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
